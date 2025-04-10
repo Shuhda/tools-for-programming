@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class FixMe {
     public static void main(String[] args) {
-        // Test the method with different inputs
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
@@ -16,12 +15,7 @@ public class FixMe {
         System.out.println(list);
     }
 
-    /**
-     * The method removes all elements smaller than zero from the list
-     * @param list the list from which elements are removed
-     */
     public static void removeNegatives(ArrayList<Integer> list) {
-        // Iterate backwards to safely remove while looping
         for (int i = list.size() - 1; i >= 0; i--) {
             if (list.get(i) < 0) {
                 list.remove(i);
